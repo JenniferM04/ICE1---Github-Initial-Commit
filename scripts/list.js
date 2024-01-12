@@ -35,8 +35,16 @@ var listItems = groceryList.getElementsByTagName("li");
 
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 // Counter variable
+var counter = 1;
+
 // Loop through elements
-// Change class to cool
+var listItems = document.getElementById("groceries").getElementsByTagName("li");
+for (var i = 0; i < listItems.length; i++)
+{
+    // Change class to cool
+    listItems[i].classList.add("cool");
+    counter++;
+}
 
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
